@@ -20,7 +20,7 @@ const app = new Vue({
           return this.message.split('').reverse().join('')
         }
       },
-      methods:{
+    methods:{
           calculateSum( value1, value2){
               return value1 + value2;
           },
@@ -39,5 +39,13 @@ const app = new Vue({
           say(message){
               alert(message + ' ' + this.name + ' !');
           }
+      },
+    watch:{
+        numero:function(val){
+            console.log('watch: ' + val);
+        },
+        textModal:function(val){
+            console.log('watch: ' + val);
+        }
       }
 });
