@@ -10,7 +10,8 @@ const app = new Vue({
        src : '../imgs/descarga.png',
        alt : 'Logo vuejs',
        numero: 10,
-       name: 'Iasí'
+       name: 'Iasí',
+       textModal: 'Test'
     },
     computed: {
         // a computed getter
