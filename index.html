@@ -9,6 +9,8 @@
 </head>
 <body>
     <div class="" id="app">
+        <div v-html=" content_html "></div>
+        <img v-bind:src="src" v-bind:alt="alt" v-bind:title="alt">
         {{ message }}
         <p>Computed reversed message: "{{ reversedMessage }}"</p>
         <p>{{ calculateSum(5,8)}}</p>

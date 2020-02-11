@@ -5,7 +5,10 @@ const app = new Vue({
        sum : 3 + 6,
        value : 1,
        isVisible : true,
-       people: ['Deivid', 'Alex', 'Yoyi', 'César', 'Chai']
+       people: ['Deivid', 'Alex', 'Yoyi', 'César', 'Chai'],
+       content_html : "<h1> Prueba renderizado de contenido </h1>",
+       src : '../imgs/descarga.png',
+       alt : 'Logo vuejs'
     },
     computed: {
         // a computed getter
