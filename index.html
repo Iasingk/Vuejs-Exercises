@@ -27,7 +27,10 @@
     <div class="" id="app">
 
         <h1 :class="{ error: p_error, no_error: !p_error }">Example v-bind Class</h1>
-        <h2 :class="{ error: mp_error, no_error: !mp_error }">Mi propio ejemplo de v-bind </h2>
+
+        <h2 v-if="mp_error">Mi propio ejemplo de v-if </h2> <!-- The item is not render -->
+        <h2 v-show="mp_error">Mi propio ejemplo de v-show </h2> <!-- Hide element-->
+        
 
         <div v-html=" content_html "></div>
         <img v-bind:src="src" v-bind:alt="alt" v-bind:title="alt">
