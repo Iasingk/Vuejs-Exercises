@@ -1,9 +1,15 @@
 const router = new VueRouter({
     base: "rutas",
-    routes:[{
-        path: '/lists',
-        component: Lists
-    }]
+    routes:[
+        {
+            path: '/list_person',
+            component: ListsPerson
+        },
+        {
+            path:'/list_language',
+            component: ListsPrograming
+        }
+    ]
 });
 
 const app = new Vue({

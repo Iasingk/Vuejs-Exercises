@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
     <script src="js/vue.js"></script>
     <script src="js/vue-router.js"></script>
     <title>Vue</title>
 
 </head>
 <body>
-    <div id="app">
-        <router-link to="/">Home</router-link>
-        <router-link to="/lists">List</router-link>
-        <router-view></router-view>
+    <div class="container">
+        <div id="app">
+            <router-link to="/">Home</router-link>
+            <router-link to="/list_person">List Person</router-link>
+            <router-link to="/list_language">List Programing</router-link>
+            <router-view></router-view>
+        </div>
     </div>
-    <script src="js/components/Lists.js"></script>
+    <script src="js/components/ListsPerson.js"></script>
+    <script src="js/components/ListsPrograming.js"></script>
+    <script src="js/components/ListAlert.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
