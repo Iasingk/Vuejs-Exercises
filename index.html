@@ -5,10 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="js/vue.js"></script>
-    <title>Document</title>
+    <title>Vue</title>
+
+    <style>
+
+        .error{
+            color: red;
+            font-size: 15px;
+            letter-spacing: 1px
+        }
+
+        .no_error{
+            color: blue;
+            font-size: 20px;
+            letter-spacing: 4px
+        }
+
+    </style>
 </head>
 <body>
     <div class="" id="app">
+
+        <h1 :class="{ error: p_error, no_error: !p_error }">Example v-bind Class</h1>
+        <h2 :class="{ error: mp_error, no_error: !mp_error }">Mi propio ejemplo de v-bind </h2>
+
         <div v-html=" content_html "></div>
         <img v-bind:src="src" v-bind:alt="alt" v-bind:title="alt">
         {{ message }}

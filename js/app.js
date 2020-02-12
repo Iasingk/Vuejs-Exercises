@@ -11,7 +11,9 @@ const app = new Vue({
        alt : 'Logo vuejs',
        numero: 10,
        name: 'Iasí',
-       textModal: 'Test'
+       textModal: 'Test',
+       p_error: false,
+       mp_error: false
     },
     computed: {
         // a computed getter
