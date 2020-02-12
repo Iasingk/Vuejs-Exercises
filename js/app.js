@@ -1,5 +1,40 @@
+/*const Foo = { template: '<div>contenido de footer</div>' }
+const Bar = { template: '<div>contenido de Barra de navegación</div>' }*/
+
+/*const routes = [
+    { path: '/foo', component: Foo },
+    { path: '/bar', component: Bar }
+  ]
+  
+  const router = new VueRouter({
+    routes // short for `routes: routes`
+  })
+
+  */
+
+const Home = {
+    template: '#homepage'
+};
+const About = {
+    template: '#about'
+};
+
+const router = new VueRouter({
+	routes: [
+		{
+			path: '/',
+			component: Home
+		},
+		{
+			path: '/about',
+			component: About
+		}
+	]
+})
+
 const app = new Vue({
     el:'#app',
+    router,
     data:{
        message: 'Hello vue',
        sum : 3 + 6,
