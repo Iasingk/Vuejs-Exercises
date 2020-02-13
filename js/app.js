@@ -46,6 +46,9 @@ const router = new VueRouter({
 const app = new Vue({
     el:'#app',
     router,
+    mounted(){
+        console.log(this.$route);
+    },
     data:{
        message: 'Hello vue',
        sum : 3 + 6,
