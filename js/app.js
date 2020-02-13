@@ -18,6 +18,9 @@ const Home = {
 const About = {
     template: '#about'
 };
+const PageNotFound = {
+    template: '#PageNotFound'
+}
 
 const router = new VueRouter({
 	routes: [
@@ -26,9 +29,17 @@ const router = new VueRouter({
 			component: Home
 		},
 		{
-			path: '/about',
+            path: '/about',
+            redirect : '/about-us'
+		},
+		{
+			path: '/about-us',
 			component: About
-		}
+        },
+        {
+            path: '*',
+			component: PageNotFound
+        }
 	]
 })
 
